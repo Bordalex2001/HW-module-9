@@ -1,0 +1,175 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 42px;
+}
+div ~ h2 {
+    margin-top: 45px;
+}
+.pink{
+    background: #da336b;
+}
+.text-boxes{
+    gap: 5px;
+}
+.text-boxes > div {
+    position: relative;
+}
+.text-boxes input{
+    width: 200px;
+}
+.text-boxes input.valid-text{
+    border-color: #5ddf38;
+}
+.text-boxes input.invalid-text{
+    border-color: #da336b;
+}
+.text-boxes input.valid-text::placeholder, 
+.text-boxes input.valid-text + .icon i{
+    color: #5ddf38;
+}
+.text-boxes input.invalid-text::placeholder, 
+.text-boxes input.invalid-text + .icon i{
+    color: #da336b;
+}
+.text-boxes input.valid-text + .icon i, 
+.text-boxes input.invalid-text + .icon i{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.check-boxes span{
+    justify-content: start;
+    border: 1px solid;
+    border-color: #da336b;
+    transition: border-color 1s;
+    width: 34px;
+}
+.check-boxes span::before{
+    margin-left: 2px;
+    background-color: #da336b;
+    transition: background-color 1s, transform .5s;
+}
+.check-boxes input:checked + label span::before{
+    transform: translateX(15px);
+}
+.radio-buttons span{
+    justify-content: center;
+    width: 18px;
+    transition: .2s;
+}
+.radio-buttons span::after{
+    transform: scale(0);
+    transition: 250ms ease-in-out;
+}
+.radio-buttons input:checked + label span::after{
+    transform: scale(1);
+}
+.check-boxes, .radio-buttons{
+    gap: 24px;
+}
+.check-boxes label, 
+.radio-buttons label{
+    gap: 8px;
+}
+.check-boxes input, 
+.radio-buttons input{
+    display: none;
+}
+.radio-buttons span, 
+.check-boxes span{
+    height: 18px;
+}
+.check-boxes span::before,
+.radio-buttons span::after{
+    content: '';
+    display: block;
+    width: 13px;
+    height: 13px;
+}
+.check-boxes label, 
+.check-boxes span, 
+.radio-buttons label, 
+.radio-buttons span{
+    align-items: center;
+}
+.check-boxes input:checked + label span,
+.radio-buttons span{
+    border: 1px solid #5ddf38;
+}
+.buttons{
+    gap: 10px;
+}
+.buttons > input{
+    width: 95px;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+}
+.buttons > input[value]{
+    font-weight: bold;
+    color: #fff;
+}
+.buttons > input:nth-child(2):hover{
+    background: #34821f;
+}
+.buttons > input:nth-child(4):hover{
+    background: #7c1c3c;
+}
+.buttons > input:nth-child(5){
+    background: #888;
+}
+.buttons > input.round{
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+}
+textarea{
+    width: 500px;
+    font-family: sans-serif;
+}
+.text-boxes input, textarea{
+    padding: 10px 20px;
+    border: 1px solid;
+}
+body > div, 
+.check-boxes span, 
+.check-boxes label, 
+.radio-buttons span, 
+.radio-buttons label{
+    display: flex;
+}
+body > div, 
+.check-boxes span, 
+.radio-buttons span{
+    flex-wrap: wrap;
+}
+.text-boxes input, textarea{
+    border-color: #ddd;
+}
+.text-boxes input::placeholder, textarea{
+    color: #ddd;
+}
+.green, .check-boxes input:checked + label span::before,
+.radio-buttons span::after{
+    background: #5ddf38;
+}
+.radio-buttons span, 
+.radio-buttons span::after,
+.buttons > input.round{
+    border-radius: 50%;
+}
+.text-boxes input,
+.check-boxes span,
+.check-boxes span::before,
+textarea{
+    border-radius: 5px;
+}
+.check-boxes label,
+.radio-buttons label,
+.buttons > input{
+    cursor: pointer;
+}

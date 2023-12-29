@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW module 9</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css" integrity="sha512-d0olNN35C6VLiulAobxYHZiXJmq+vl+BGIgAxQtD5+kqudro/xNMvv2yIHAciGHpExsIbKX3iLg+0B6d0k4+ZA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/solid.min.css" integrity="sha512-pZlKGs7nEqF4zoG0egeK167l6yovsuL8ap30d07kA5AJUq+WysFlQ02DLXAmN3n0+H3JVz5ni8SJZnrOaYXWBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="HWmod9.css">
+</head>
+<body>
+    <h2>Inputs</h2>
+    <div class="text-boxes">
+        <div>
+            <input type="text" name="textbox" placeholder="Enter some text">
+        </div>
+        <div>
+            <input type="text" name="textbox" placeholder="valid text" class="valid-text" readonly>
+            <div class="icon"><i class="fa-solid fa-check"></i></div>
+        </div>
+        <div>
+            <input type="text" name="textbox" placeholder="invalid text" class="invalid-text" readonly>
+            <div class="icon"><i class="fa-solid fa-xmark"></i></div>
+        </div>
+    </div>
+    <h2>Check boxes</h2>
+    <div class="check-boxes">
+        <input type="checkbox" name="toogle-switch" id="subscr1">
+        <label class="toogle-switch" for="subscr1"><span class="slider"></span>Subscribe</label>
+        <input type="checkbox" name="toogle-switch"  id="subscr2" checked>
+        <label class="toogle-switch" for="subscr2"><span class="slider"></span>Subscribe</label>
+    </div>
+    <h2>Radio buttons</h2>
+    <div class="radio-buttons">
+        Gender:
+        <input type="radio" name="radio" id="radio1" checked>
+        <label for="radio1"><span></span>Male</label>
+        <input type="radio" name="radio" id="radio2">
+        <label for="radio2"><span></span>Female</label>
+    </div>
+    <h2>Buttons</h2>
+    <div class="buttons">
+        <input type="button" value="Active" class="green">
+        <input type="button" value="Hover" class="green">
+        <input type="button" value="Danger" class="pink">
+        <input type="button" value="Hover" class="pink">
+        <input type="button" value="Disabled" disabled>
+        <input type="button" value="&plus;" class="green round">
+        <input type="button" value="&minus;" class="pink round">
+    </div>
+    <h2>Text area</h2>
+    <textarea>Enter some text...</textarea>
+</body>
+</html>
